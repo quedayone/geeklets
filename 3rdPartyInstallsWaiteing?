@@ -1,0 +1,16 @@
+#----------AUTHOR------------
+	# Will Pierce
+	# 140801
+	## must use WaitingRoom-List Extension Attribute for this to work
+## is there a waiting room text file?
+if [ /Users/Shared/waitingRoom.txt ];then
+## YES
+### Display waitingRoom.txt SET to failure
+cat /Users/Shared/waitingRoom.txt
+exit 2
+
+## NO
+else
+echo "No installs waiting"
+### Set to success
+exit 0
